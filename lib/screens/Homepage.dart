@@ -2,10 +2,12 @@ import 'package:fashionshop/component/CategoryTitle.dart';
 import 'package:fashionshop/component/NewsFeed.dart';
 import 'package:fashionshop/component/appbar.dart';
 import 'package:fashionshop/component/homebuttonMenuicon.dart';
+import 'package:fashionshop/component/homepopularlist.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../app/AppColors.dart';
+import '../component/categorylist.dart';
 import '../component/searchBar.dart';
 
 
@@ -44,7 +46,10 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           CategoryTitle(title: 'Category', trailingTitle: 'View All',),
-          //HomeCategoryList(),
+        // HomeCategoryList(),
+          HomeCategoryList(),
+          CategoryTitle(title: 'Popular', trailingTitle: "View All"),
+          HomePopularList(),
         ],
       ),
       bottomNavigationBar: bottomNavigationBar(),
